@@ -8,6 +8,6 @@ RUN npm install
 COPY . .
 RUN ember build -prod
 
-FROM semtech/ember-proxy-service:1.5.0
+FROM semtech/ember-proxy-service:1.5.1
 
 COPY --from=builder /app/dist /app

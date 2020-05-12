@@ -2,10 +2,13 @@
   "name": "frontend-metis",
   "version": "0.0.1",
   "private": true,
-  "description": "Small description for frontend-data.lblod.info goes here",
-  "repository": "",
+  "description": "Ember frontend of the centrale-vindplaats application",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lblod/frontend-data.lblod.info.git"
+  },
   "license": "MIT",
-  "author": "",
+  "author": "redpencil.io",
   "directories": {
     "doc": "doc",
     "test": "tests"

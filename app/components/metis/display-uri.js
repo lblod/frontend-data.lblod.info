@@ -22,8 +22,8 @@ export default class MetisDisplayUriComponent extends Component {
 
   async fetchPreflabels(){
     if( this.args.uri ) {
-      const base = "http://preflabel.org/api/v1/label/";
-      const fetchUrl = new URL(`${base}${encodeURIComponent( this.args.uri )}`);
+      const base = "/preflabel-discovery/api/v1/label/";
+      const fetchUrl = `${base}${encodeURIComponent( this.args.uri )}`;
       const request = await fetch( fetchUrl );
       const value = await request.text();
       if( request.status == 200 ) {

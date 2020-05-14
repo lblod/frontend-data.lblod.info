@@ -72,7 +72,7 @@
 									</table>
 								</div>
 								{{else}}
-								<p class="text-fade u-spacer--large">Geen directed links gevonden.</p>
+								<p class="text-fade u-spacer--large">Geen directe links gevonden.</p>
 								{{/if}}
 
 								<h2 class="h3 sans-serif u-spacer--tiny">Verwijzingen</h2>
@@ -86,7 +86,6 @@
 											<tr>
 												<th>Onderwerp {{!-- subject --}}</th>
 												<th>Eigenschap{{!-- predicate --}}</th>
-												<th>Definitie</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -95,7 +94,6 @@
 												<td><Metis::DisplayUri @uri={{triple.subject}} /></td>
 												<td><Metis::DisplayUri @uri={{triple.predicate}} /></td>
 												{{!-- <td><Metis::DisplayUri @uri={{triple.object}} /></td> --}}
-												<td>Bijvoorbeeld een persoon in zijn of haar rol als houder van een mandaat.</td>
 											</tr>
 											{{/each}}
 										</tbody>
